@@ -11,7 +11,8 @@ server {
     return 301 https://$host$request_uri;
 }
 
-# Bloque 2: El servidor seguro principal
+# Configuración de seguridad perimetral
+# Implementación de terminación SSL
 server {
     listen 443 ssl;
     server_name 192.168.50.10;
